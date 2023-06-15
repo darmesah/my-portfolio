@@ -1,0 +1,31 @@
+.container {
+    text-align: end;
+}
+
+.container li {
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: #98A2B3;
+    font-family: 'Satoshi-Bold';
+    font-size: 1.1rem;
+}
+
+@media (min-width:768px) {
+    .container {
+        text-align: left;
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        text-align: end;
+    }
+
+    .container a:hover {
+        color: #344054;
+    }
+}

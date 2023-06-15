@@ -1,0 +1,50 @@
+.container {
+    padding: 90px 0px 20px 20px;
+}
+
+.container h3 {
+    font-family: 'Satoshi-Bold';
+    padding-bottom: 40px;
+}
+
+.container div {
+    font-family: 'Satoshi-Bold';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #101828;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 0 5px 0 10px;
+    height: 200px;
+}
+
+.container div h2 {
+    font-family: 'Satoshi-Bold';
+    font-size: 2.2rem;
+}
+
+.container div p {
+    font-family: 'Satoshi-Medium';
+    padding-top: 20px;
+}
+
+@media (min-width:1224px) {
+    .container {
+        padding: 120px 0px 90px 20px;
+    }
+
+    .container div {
+        padding: 0 5px 0 30px;
+        height: 230px;
+    }
+
+    .container div h2 {
+        font-size: 3rem;
+    }
+
+    .container div p {
+        padding-top: 30px;
+        font-size: 1.3rem;
+    }
+}

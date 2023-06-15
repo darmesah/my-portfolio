@@ -1,0 +1,101 @@
+.container {
+    padding: 130px 20px 100px 20px;
+    background: #101828;
+    color: #fff;
+}
+
+.container h3 {
+    padding-bottom: 50px;
+    font-family: 'Satoshi-Bold';
+}
+
+.container h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-family: 'Satoshi-Bold';
+    padding-bottom: 50px;
+}
+
+.p1 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.profiles div {
+    padding-bottom: 35px;
+}
+
+.profiles a,
+.design a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Satoshi-Bold';
+    font-size: 1.25rem;
+}
+
+.profiles h4 {
+    padding: 0 0 20px 10px;
+}
+
+.design {
+    padding-top: 30px;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+        padding: 160px 20px 50px 18%;
+    }
+
+    .flex_all {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profiles {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profiles div {
+        padding-bottom: 0;
+    }
+
+    .links {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .links h4:last-child {
+        padding-bottom: 0;
+    }
+
+    .design {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .phone {
+        padding-bottom: 30px !important;
+    }
+}
+
+@media (min-width:1224px) {
+    .container {
+        width: 100%;
+        margin-top: 70px;
+        padding: 120px 15% 70px 12%;
+    }
+
+    .container h3 {
+        padding-bottom: 20px;
+    }
+
+    .container h1 {
+        padding-bottom: 20px;
+    }
+}

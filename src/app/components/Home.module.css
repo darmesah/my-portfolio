@@ -1,0 +1,28 @@
+@media (min-width:768px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side {
+        width: 22%;
+    }
+
+    .body {
+        width: 78%;
+    }
+}
+
+@media (min-width:1024px) {
+    .side {
+        width: 12%;
+    }
+
+    .side2 {
+        width: 14%;
+    }
+
+    .body {
+        width: 74%;
+    }
+}
