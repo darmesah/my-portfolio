@@ -1,12 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Navlinks from "../Navlinks/Navlinks";
 import classes from "./Naviagtion.module.css";
 
 const Naviagtion = () => {
   const [showNav, setShowNav] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const specificPoint = 4000;
+
+      if (scrollY >= specificPoint) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const navlinkHandler = () => {
     setShowNav((prevValue) => !prevValue);
@@ -34,7 +54,7 @@ const Naviagtion = () => {
           <div className={classes.logo}>
             <img src="/images/logo.png" alt="logo" />
           </div>
-          <div className={classes.nav}>
+          <div className={`${isScrolled && classes.scroll} ${classes.nav}`}>
             <Navlinks />
           </div>
           <div className={classes.socials}>

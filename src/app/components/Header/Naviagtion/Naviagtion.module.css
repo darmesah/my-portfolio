@@ -55,13 +55,14 @@
     .side_cont {
         display: inherit;
         height: 100%;
+        position: fixed;
     }
 
     .side_nav {
-        padding: 80px 20px 0 30px;
+        padding: 60px 20px 0 30px;
         display: flex;
         flex-direction: column;
-        height: 17.7%;
+        height: 100%;
         justify-content: space-between;
     }
 
@@ -69,11 +70,15 @@
         align-items: flex-start;
     }
 
+    .scroll a {
+        color: #fff;
+    }
+
     .socials {
-        height: 56%;
+        height: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .socials img {
@@ -90,6 +95,6 @@
 
     .side_nav {
         padding: 100px 20px 0 60px;
-        height: 13.7%;
+        height: 70%;
     }
 }

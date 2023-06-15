@@ -61,7 +61,7 @@
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1224px) {
     .testimonial_desk {
         display: block;
         height: 440px;
